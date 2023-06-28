@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwajeet Anekar: Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+
+  <body class="light-theme">
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>V</span>ishwajeet <span>A</span>nekar</h1>
+            </a>
+          </div>
+
+          <div class="btn-group">
+            <button class="theme-btn theme-btn-mobile light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+
+            <button class="nav-menu-btn">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="flex-wrapper">
+            <ul class="desktop-nav">
+              <li>
+                <a href="#hero" class="nav-link">Home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+            <button class="theme-btn theme-btn-desktop light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+          </div>
+
+          <div class="mobile-nav">
+            <button class="nav-close-btn">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="wrapper">
+              <p class="h3 nav-title">Main Menu</p>
+
+              <ul>
+                <li class="nav-item">
+                  <a href="#hero" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About Me</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="hero">
+          <div class="container">
+            <div class="left">
+              <h1 class="h1">
+                Hi, I'm <b>Vishwajeet&nbsp;</b>. <br />Software Developer
+              </h1>
+              <p class="h3">
+                And I am passianate in
+                <span id="element"></span>
+              </p>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary" onclick="openPDF()"
+                  >Download Resume</a
+                >
+                <a href="#about" class="btn btn-secondary">About Me</a>
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="pattern-bg"></div>
+              <div class="img-box">
+                <img
+                  src="./Assets/vishwajeet.png"
+                  alt="Vishwajeet Anekar"
+                  class="hero-img"
+                />
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="about container">
+          <div class="col-right">
+            <h1 class="section-title">About <span>me</span></h1>
+            <h2>Software Developer</h2>
+            <p>
+              I'm Vishwajeet Anekar, a versatile software developer proficient
+              in Python, Java, C, web development, and data science. With a
+              passion for creating efficient solutions, I constantly explore new
+              technologies to stay at the forefront of the industry.
+            </p>
+            <p>
+              In web development, I craft interactive websites using HTML, CSS,
+              JavaScript, and frameworks like React and Angular. I prioritize
+              seamless user experiences and optimal performance across
+              platforms.
+            </p>
+            <p>
+              In the realm of data science, I extract valuable insights from
+              complex datasets using advanced analytics, machine learning
+              algorithms, and visualization techniques. I help organizations
+              make data-driven decisions and optimize their processes.
+            </p>
+            <p>
+              Collaboration and effective communication are integral to my work
+              style, as I thrive in diverse teams. I strive for clean code,
+              maintainability, and best practices to deliver exceptional
+              results.
+            </p>
+            <p>
+              Let's build the future together through innovative software
+              solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project section -->
+
+      <section id="projects">
+        <div class="projects container1">
+          <div class="projects-header">
+            <h1 class="section-title"><span>Pro</span>jects</h1>
+          </div>
+          <div class="all-projects">
+            <div class="project-item">
+              <div class="project-info">
+                <h2>E-commerce Website</h2>
+                <h3>Python, Django, HTML, CSS, JavaScript</h3>
+                <p>
+                  Developed a fully functional e-commerce website using Python
+                  and Django framework. Implemented features such as user
+                  authentication, product catalog, shopping cart, payment
+                  gateway integration, and order management. Created a seamless
+                  user experience with responsive design and intuitive
+                  navigation.
+                </p>
+              </div>
+              <div class="project-img">
+                <img src="./Assets/ecom.jpeg" alt="img" />
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h2>Movie Recommendation System</h2>
+                <h3>
+                  Python, Machine Learning, Web Development (HTML, CSS,
+                  JavaScript)
+                </h3>
+                <p>
+                  Developed a movie recommendation system based on user
+                  preferences and movie ratings. Utilized machine learning
+                  techniques, such as collaborative filtering and content-based
+                  filtering, to generate personalized movie recommendations.
+                  Designed a visually appealing web interface for users to
+                  explore and discover new movies
+                </p>
+              </div>
+              <div class="project-img">
+                <img src="./Assets/movie.jpeg" alt="img" />
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h2>Personal Portfolio Website</h2>
+                <h3>Web Development (HTML, CSS, JavaScript), Design (UI/UX)</h3>
+                <p>
+                  Designed and developed a personal portfolio website to
+                  showcase your skills, projects, and achievements. Created an
+                  aesthetically pleasing and user-friendly interface to
+                  highlight your expertise and attract potential clients or
+                  employers. Incorporated responsive design principles to ensure
+                  a seamless experience across different devices.
+                </p>
+              </div>
+              <div class="project-img">
+                <img src="./Assets/por.png" alt="img" />
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h2>JavaWebShop</h2>
+                <h3>Java</h3>
+                <p>
+                  Develop an e-commerce web application using Java, JavaServer
+                  Pages (JSP), and Servlets. Implement features such as user
+                  registration, product catalog, shopping cart, and secure
+                  payment processing
+                </p>
+              </div>
+              <div class="project-img">
+                <img src="./Assets/java.png" alt="img" />
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h2>Student Management System</h2>
+                <h3>Python (Tkinter), MySQL</h3>
+                <p>
+                  Developed a student management system with a visually
+                  appealing user interface using Python's Tkinter library.
+                  Integrated with a MySQL database to store and manage student
+                  records, including personal details, academic information, and
+                  attendance data.
+                </p>
+              </div>
+              <div class="project-img">
+                <img src="./Assets/sms.jpeg" alt="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- service section -->
+      <section id="services">
+        <div class="services container">
+          <div class="service-top">
+            <h1 class="section-title">Serv<span>ices</span></h1>
+            <p>
+              As a skilled software developer, I offer a range of professional
+              services to help clients achieve their technological goals. With
+              expertise in Python, Java, web development, data science, and
+              more, I can provide solutions tailored to specific needs. Here are
+              five services I offer:
+            </p>
+          </div>
+          <div class="service-bottom">
+            <div class="service-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/services.png"
+                />
+              </div>
+              <h2>Web Development</h2>
+              <p>
+                I create custom web solutions using HTML, CSS, JavaScript, and
+                frameworks like Django and Flask. From static websites to
+                dynamic web applications, I deliver responsive and user-friendly
+                sites that meet clients' requirements
+              </p>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/services.png"
+                />
+              </div>
+              <h2>Software Development</h2>
+              <p>
+                I specialize in developing robust software applications using
+                Python, Java, and other languages. Whether it's desktop apps,
+                mobile applications, or enterprise-level solutions, I ensure
+                high-quality code, scalability, and optimal performance.
+              </p>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/services.png"
+                />
+              </div>
+              <h2>Data Science and Analytics</h2>
+              <p>
+                Leveraging Python libraries like Pandas, NumPy, and
+                scikit-learn, I offer services in data analysis, machine
+                learning, and predictive modeling. I help clients gain valuable
+                insights, make data-driven decisions, and build intelligent
+                systems.
+              </p>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/services.png"
+                />
+              </div>
+              <h2>Database Management</h2>
+              <p>
+                With expertise in SQL and database management systems, I provide
+                services for designing, implementing, and optimizing databases.
+                I ensure efficient data storage, retrieval, and management,
+                creating robust and scalable solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="contact container">
+          <div>
+            <h1 class="section-title">Con<span>tact</span></h1>
+          </div>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/phone.png"
+                />
+              </div>
+              <div class="contact-info">
+                <h2>Phone</h2>
+                <h3>9587456321</h3>
+                <h3>9587456321</h3>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+                />
+              </div>
+              <div class="contact-info">
+                <h2>Email</h2>
+                <h3>vishwajeet21</h3>
+                <h3>vishwajeet.anekar22</h3>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+                />
+              </div>
+              <div class="contact-info">
+                <h2>Address</h2>
+                <h3>Dighi, Pune Maharashtra - 15</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <div class="brand">
+            <a href="#">
+              <h1><span>V</span>ishwajeet <span>A</span>nekar</h1>
+            </a>
+          </div>
+
+          <p class="footer-text">
+            Learn about Web accessibility, Web performance, Database management
+            and Software Development
+          </p>
+        </div>
+
+        <div class="wrapper">
+          <p class="footer-title">Quick Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Advertise with us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="wrapper">
+          <p class="footer-title">Legal Stuff</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Privacy Notice</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Cookie Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms Of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">
+        &copy; Copyright 2023 <a href="#">vishwajeetanekar</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: [
+          'Web Devlopment',
+          'Python Development',
+          'Java Development',
+          'Web Design',
+        ],
+        typeSpeed: 100,
+        loop: true,
+      });
+    </script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
